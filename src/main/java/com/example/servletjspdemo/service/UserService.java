@@ -6,8 +6,8 @@ public class UserService {
 
 	public boolean authenticate(User user)
 	{
-		return user.getLogin().equals("jkowal")
-				&&user.getPassword().equals("1234");
+		return user.getLogin().equals("Moldiar")
+				&&user.getPassword().equals("Morre");
 	}
 	
 }
