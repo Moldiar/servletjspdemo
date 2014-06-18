@@ -5,13 +5,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Demo application</title>
+        <title>Character List Storage</title>
     </head>
     <body>
     
-        <h2>Simple demo application with Java EE 6 Servlet (3.0) and JSP</h2>
-        <p><a href="hello">See greetings from servlet</a></p>
-        <p><a href="form">Fill a form</a></p>
-        <p><a href="login.jsp">Log in</a></p>
+        <h2>Welcome to the Character List Storage service</h2>
+        <p><h4>This Service is aimed at giving the user the best experience at storing his precious character information and making sure it will be safe for future reference. </h4></p>
+        <p><a href="login.jsp">Login to CLS</a></p>
+        <p><a href="howto">See detailed information about the service</a></p>
     </body>
 </html>

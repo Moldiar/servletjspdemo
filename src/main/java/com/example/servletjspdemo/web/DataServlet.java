@@ -13,23 +13,23 @@ import javax.servlet.http.HttpServletResponse;
 public class DataServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+
 		response.setContentType("text/html");
-		
+
 		PrintWriter out = response.getWriter();
-		
+
 		String selectedHobby = "";
 		for (String hobby : request.getParameterValues("hobby")) {
 			selectedHobby += hobby + " ";
 		}
-		out.println("<html><body><h2>Your data</h2>" +
-				"<p>First name: " + request.getParameter("firstName") + "<br />" +
-				"<p>Your hobby: " + selectedHobby + "<br />" +
-				"</body></html>");
+		out.println("<html><body><h2>You are an interesting person</h2>" + "<p>First name: "
+				+ request.getParameter("firstName") + "<br />"
+				+ "<p>Your hobby: " + selectedHobby + "</p><br />");
+		out.println("<a href=\"PostLoginMenu.jsp\">Back to Main Menu</a></body></html>");
 		out.close();
 	}
 

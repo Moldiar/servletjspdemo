@@ -9,7 +9,7 @@
 <body>
 
 <jsp:useBean id="user" class="com.example.servletjspdemo.domain.User" scope="session" />
-
+<h3>Please login to use service</h3>
 <form action="loginPost.jsp" method="post">
 
   Login :<input type="text" name="login" value="${user.login}" /><br />
@@ -18,6 +18,6 @@
   
   
 </form>
-
+<p><a href="index.jsp">Back to Main screen</a></p>
 </body>
 </html>

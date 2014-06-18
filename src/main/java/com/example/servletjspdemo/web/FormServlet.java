@@ -21,16 +21,17 @@ public class FormServlet extends HttpServlet {
 		response.setContentType("text/html");
 		
 		PrintWriter out = response.getWriter();
-		out.println("<html><body><h2>Simple form servlet</h2>" +
+		out.println("<html><body><h2>Tell us something about yourself</h2>" +
 				"<form action='data'>" +
-				"First name: <input type='text' name='firstName' /> <br />" +
-				"<input type='checkbox' name='hobby' value='bicycle'>I like riding a bicycle<br />" +
-				"<input type='checkbox' name='hobby' value='tv'>I like watching TV<br />" +
-				"<input type='checkbox' name='hobby' value='beer'>I like dringking beer<br />" +
-				"<input type='checkbox' name='hobby' value='books'>I like reading books<br />" +
+				"Name: <input type='text' name='firstName' /> <br />" +
+				"<input type='checkbox' name='hobby' value='cats'>I like cats<br />" +
+				"<input type='checkbox' name='hobby' value='internet'>I like the internet<br />" +
+				"<input type='checkbox' name='hobby' value='unicorns'>I like unicorns<br />" +
+				"<input type='checkbox' name='hobby' value='rainbows'>I like rainbows<br />" +
+				"<input type='checkbox' name='hobby' value='explosions'>I like explosions<br />" +
 				"<input type='submit' value=' OK ' />" +
-				"</form>" +
-				"</body></html>");
+				"</form><br />" +
+				"<a href=\"PostLoginMenu.jsp\">Back to Main Menu</a></body></html>");
 		out.close();
 	}
 

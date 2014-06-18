@@ -9,15 +9,16 @@
 <body>
 
 <jsp:useBean id="user" class="com.example.servletjspdemo.domain.User" scope="session" />
-<jsp:useBean id="userService" class="com.example.servletjspdemo.service.UserService" scope="application"/>
-<jsp:setProperty property="*" name="user"/>
+<h3>Please login to use service</h3>
+<h4 align="center">Bad Login or Password!</h4>
+<form action="loginPost.jsp" method="post">
 
-<%
-	if(userService.authenticate(user))
-		response.sendRedirect("PostLoginMenu.jsp");
-	else
-		response.sendRedirect("badLogin.jsp");
-%>
-
+  Login :<input type="text" name="login" value="${user.login}" /><br />
+  Password :<input type="password"  name="password" value="${user.password}" /><br />
+  <input type="submit" value=" OK ">
+  
+  
+</form>
+<p><a href="index.jsp">Back to Main screen</a></p>
 </body>
 </html>
